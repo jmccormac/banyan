@@ -18,6 +18,7 @@ def find_recursive(pattern, package='banyan'):
 banyan_c = Extension('banyan_c',
                      include_dirs=['/usr/local/include', 'banyan'],
                      language='c++',
+                     extra_compile_args=['-std=c++98'],
                      depends=list(find_recursive('*.hpp')),
                      sources=list(find_recursive('*.cpp')))
 
