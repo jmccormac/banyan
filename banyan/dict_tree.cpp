@@ -295,7 +295,7 @@ PyTypeObject DictTreeType = {
     dict_tree_type_doc,                     
     /*tp_traverse*/
     0,       
-+    /*tp_clear*/
+    /*tp_clear*/
     0,               
     /*tp_richless_than*/
     0,                                      
